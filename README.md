@@ -1,6 +1,9 @@
 # list-of-important-commands
 This is a list of important commands for deployment or installation if different packages and/or environments.
 
+### Command to kill port that is already in use by another application
+- $ lsof -t -i tcp:8000 | xargs kill -9
+
 ### Install virtual environmnet in directory
 
 In the main directory root add the following command to create the environment:
