@@ -17,3 +17,11 @@ In the root (not in the venv folder) add the following command to activate the v
 
 ### Install django-heroku without psycopg2
 - ```$ pip install django-heroku --no-dependencies```
+
+### Display sqlite3 db on bash cmd
+
+1. ```python manage.py dbshell```: This command will activate the sqlite shell.
+2. ```sqlite> .tables```: This command will display all tables available on shell.
+3. ```sqlite> .header on ```: Will activate headers.
+4. ```sqlite> .mode column```: Will activate columns
+5. ```sqlite> pragma table_info('<table_name>'); ```: This command will display the <table_name> you want to see.
