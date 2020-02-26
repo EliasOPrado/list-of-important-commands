@@ -20,6 +20,8 @@ In the root (not in the venv folder) add the following command to activate the v
 
 ### Display sqlite3 db on bash cmd
 
+[Sqlite tutorial to describe table here](https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-describe-table/)
+
 1. ```python manage.py dbshell```: This command will activate the sqlite shell.
 2. ```sqlite> .tables```: This command will display all tables available on shell.
 3. ```sqlite> .header on ```: Will activate headers.
