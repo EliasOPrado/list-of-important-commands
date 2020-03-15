@@ -18,6 +18,9 @@ In the root (not in the venv folder) add the following command to activate the v
 ### Install django-heroku without psycopg2
 - ```$ pip install django-heroku --no-dependencies```
 
+### Check which repo is in my git
+- ```git remote -v```
+
 ### Display sqlite3 db on bash cmd
 
 [Sqlite tutorial to describe table here](https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-describe-table/)
