@@ -8,11 +8,31 @@ This is a list of important commands for deployment or installation if different
 
 In the main directory root add the following command to create the environment:
 
-- ```$ python3 -m venv venv```
-The code above will create a folder called venv in the root. Which basically is the virtual environment folder.
+```$ python3 -m venv venv``` this code will create a folder called venv in the root. Which basically is the virtual environment folder.
 
-In the root (not in the venv folder) add the following command to activate the virtual environment:
-- ```$ source venv/bin/activate```
+Then add the following command to activate the virtual environment:
+```
+$ source venv/bin/activate
+
+your_project_folder/
+ |
+ |-- your_main_app_folder/
+ |         |
+ |         |--Folder_with_controllers/
+ |         |            settings.py
+ |         |            urls.py
+ |         |            ...
+ |         | 
+ |         |--App_folder/
+ |         |--Other_app_folder/
+ |
+ |--venv/
+ ```
+If the code works fine your bash should look like this: (venv) <the_path_for_the_folder> your_project_folder %
+
+After activated your environment you can now install django and other packages.
+
+Ps: make sure you instal and activate the virtual environment folder not in the ```your_main_app_folder```.
 
 
 ### Install django-heroku without psycopg2
