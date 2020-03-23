@@ -40,7 +40,12 @@ Ps: make sure you instal and activate the virtual environment folder not in the 
 - ```$ pip install django-heroku --no-dependencies```
 
 ### Add remote/already added repo from heroku
+
 - ```$ heroku git:remote -a <already_added_app_name>```
+
+[Django deployment to heroku step-by-step here](https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html)
+Ps: based on the step-by-step above, depending the version of django `whitenoise` should not be added to `wsgi.py` file rather it should be added to middlewares in `settings.py`.
+
 
 ### Check which repo is in my git
 - ```git remote -v```
