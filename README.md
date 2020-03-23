@@ -35,8 +35,12 @@ After activated your environment you can now install django and other packages.
 Ps: make sure you instal and activate the virtual environment folder not in the ```your_main_app_folder```.
 
 
-### Install django-heroku without psycopg2
+### Install django-heroku without psycopg2 for mac os
+- ```$ pip install psycopg2-binary```
 - ```$ pip install django-heroku --no-dependencies```
+
+### Add remote/already added repo from heroku
+- ```$ heroku git:remote -a <already_added_app_name>```
 
 ### Check which repo is in my git
 - ```git remote -v```
