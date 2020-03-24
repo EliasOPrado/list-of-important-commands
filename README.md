@@ -49,6 +49,38 @@ Ps: based on the step-by-step above, depending the version of django `whitenoise
 
 ### Check which repo is in my git
 - ```git remote -v```
+- This is how should be on the bottom of settings.py
+
+```
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.0/howto/static-files/
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #for deployment
+
+"""ADD ENV TO AVOID SHOWING THE REAL KEYS """
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET')
+```
+And and add `whitenoise` in middlewares:
+`whitenoise.middleware.WhiteNoiseMiddleware',`.
+
+After deploying to heroku add this command:
+`python3 manage.py collectstatic` to create `staticfiles` within the `main_folder` to 
+run static files while `Debug=False`. 
+
+Remember, to have access to `static` files while developing in `localhost` live `Debug.True`. 
+
 
 ### Display sqlite3 db on bash cmd
 
