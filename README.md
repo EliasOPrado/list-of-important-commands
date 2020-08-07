@@ -81,6 +81,18 @@ run static files while `Debug=False`.
 
 Remember, to have access to `static` files while developing in `localhost` live `Debug.True`. 
 
+### Remove commits 
+
+To force to remove the last commit from git,
+use these 2 following commands:
+
+git reset --hard HEAD^
+git push origin -f
+
+If you want to remove the last 2 commits:
+git reset --hard HEAD~2
+git push origin -f
+
 
 ### Display sqlite3 db on bash cmd
 
