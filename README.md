@@ -10,10 +10,54 @@ In the main directory root add the following command to create the environment:
 
 ```$ python3 -m venv venv``` this code will create a folder called venv in the root. Which basically is the virtual environment folder.
 
-Then add the following command to activate the virtual environment:
-```
-$ source venv/bin/activate
+Then add the following command to activate the virtual environment: ```$ source venv/bin/activate````.```
 
+If the code works fine your bash should look like this: (venv) <the_path_for_the_folder> your_project_folder %
+
+After activated your environment you can now install django and other packages.
+
+Ps: make sure you instal and activate the virtual environment folder not in the ```your_main_app_folder```.
+
+ ### Initiate a new Django project 
+ 
+ - Once the virtual environment is installed it is time to create a django project. Therefore, the command to start a new project is as follow?
+ ```$ django-admin startproject mysite```
+ 
+- Therefore, once the project is created, the directory will look like this below:
+
+```
+your_project_folder/
+ |
+ |-- your_main_app_folder/
+ |         |
+ |         |--Folder_with_controllers/
+ |                      __init__.py
+ |                      settings.py
+ |                      urls.py
+ |                      wsgy.py
+ |         
+ |         
+ |
+ |--manage.py
+ |--venv/
+ ```
+- Make sure you have already migrated the data-base with the command:
+ ```$ python manage.py makemigrations``` and ```$ python manage.py migrate```
+ 
+ - One you have done those two commands its time to run the server with the following command:
+ ```$ python manage.py runserver```
+ 
+ ### Creating a new app
+ 
+ - The command to create a new app is:
+ ```$ python manage.py startapp <the-name-of-your-app>```
+ 
+ - Dont forget to add the ```<the-name-of-your-app>``` app into the ```settings.INSTALLED_APPS```.
+ - Once the app is already added to the settings migrate it again.
+ 
+ The directory will look like this with the new app:
+ 
+ ```
 your_project_folder/
  |
  |-- your_main_app_folder/
@@ -24,15 +68,11 @@ your_project_folder/
  |         |            ...
  |         | 
  |         |--App_folder/
- |         |--Other_app_folder/
+ |         
  |
+ |--manage.py
  |--venv/
  ```
-If the code works fine your bash should look like this: (venv) <the_path_for_the_folder> your_project_folder %
-
-After activated your environment you can now install django and other packages.
-
-Ps: make sure you instal and activate the virtual environment folder not in the ```your_main_app_folder```.
 
 
 ### Install django-heroku without psycopg2 for mac os
