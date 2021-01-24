@@ -94,7 +94,7 @@ Ps: based on the step-by-step above, depending the version of django `whitenoise
 - ```git remote -v```
 - This is how should be on the bottom of settings.py
 
-
+```
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
