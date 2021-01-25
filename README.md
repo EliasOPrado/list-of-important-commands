@@ -4,7 +4,7 @@ This is a list of important commands for deployment or installation if different
 ### Command to kill port that is already in use by another application
 - ```$ lsof -t -i tcp:8000 | xargs kill -9```
 
-### Install virtual environmnet in directory
+### Install Django virtual environmnet in directory
 
 In the main directory root add the following command to create the environment:
 
@@ -17,6 +17,13 @@ If the code works fine your bash should look like this: (venv) <the_path_for_the
 After activated your environment you can now install django and other packages.
 
 Ps: make sure you instal and activate the virtual environment folder not in the ```your_main_app_folder```.
+
+### Deactivate Django virtual environment in directory
+
+```$ deactivate ```
+If this doesn't work, try
+
+```$ source deactivate```
 
  ### Initiate a new Django project 
  
