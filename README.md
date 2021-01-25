@@ -21,6 +21,7 @@ Ps: make sure you instal and activate the virtual environment folder not in the 
 ### Deactivate Django virtual environment in directory
 
 ```$ deactivate ```
+
 If this doesn't work, try
 
 ```$ source deactivate```
