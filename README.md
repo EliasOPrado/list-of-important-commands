@@ -145,6 +145,14 @@ git reset --hard HEAD~2
 git push origin -f
 
 
+### Install DB Browser for Sqlite
+
+You can download this application [from here](https://sqlitebrowser.org/).
+
+<img src="https://codeyarns.files.wordpress.com/2017/07/20170712_sqlitebrowser.png?w=1100" width="40%">
+
+There are a application in which you can use to display database
+
 ### Display sqlite3 db on bash cmd
 
 [Sqlite tutorial to describe table here](https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-describe-table/)
