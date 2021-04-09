@@ -4,6 +4,9 @@ This is a list of important commands for deployment or installation if different
 ### Command to kill port that is already in use by another application
 - ```$ lsof -t -i tcp:8000 | xargs kill -9```
 
+### Command to change the Github user on VS code or even other IDE:
+- ```git config --global user.email "email@example.com" ```
+
 ### Install Django virtual environmnet in directory
 
 - In the main directory root add the following command to create the environment:
