@@ -13,7 +13,7 @@ This is a list of important commands for deployment or installation if different
 8. [Initiate a new Django project ](#Initiate-a-new-Django-project )
 9. [Creating a new app](#Creating-a-new-app)
 10. [Install django-heroku without psycopg2 for mac os](#Install-django-heroku-without-psycopg2-for-mac-os)
-11. [Add remote/already added repo from heroku](#Add-remote/already-added-repo-from-heroku)
+11. [Add remote or already added repo from heroku](#Add-remote-or-already-added-repo-from-heroku)
 12. [Option to wsgi for Django deployment to Heroku](#Option-to-wsgi-for-Django-deployment-to-Heroku)
 13. [This is how should be on the bottom of settings.py](#This-is-how-should-be-on-the-bottom-of-settings.py)
 14. [Install DB Browser for Sqlite](#Install-DB-Browser-for-Sqlite)
@@ -137,7 +137,7 @@ your_project_folder/
 - ```$ pip install psycopg2-binary```
 - ```$ pip install django-heroku --no-dependencies```
 
-### Add remote/already added repo from heroku
+### Add remote or already added repo from heroku
 
 - ```$ heroku git:remote -a <already_added_app_name>```
 
