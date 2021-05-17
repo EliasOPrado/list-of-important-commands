@@ -1,11 +1,32 @@
 # list-of-important-commands
 This is a list of important commands for deployment or installation if different packages and/or environments.
 
+## Table of content
+
+1. [Command to kill port that is already in use by another application](#Command_to_kill_port_that_is_already_in_use_by_another_application)
+2. [Command to change the Github user on VS code or even other IDE](#Command_to_change_the_Github_user_on_VS_code_or_even_other_IDE:)
+3. [remove a submodule from git](#To remove a submodule from git you need to)
+4. [Check which repo and branch is in my git](#Check which repo and branch is in my git)
+5. [Remove commits ](#Remove commits )
+6. [Install Django virtual environmnet in directory](#Install Django virtual environmnet in directory)
+7. [Deactivate Django virtual environment in directory](#Deactivate Django virtual environment in directory)
+8. [Initiate a new Django project ](#Initiate a new Django project )
+9. [Creating a new app](#Creating a new app)
+10. [Install django-heroku without psycopg2 for mac os](#Install django-heroku without psycopg2 for mac os)
+11. [Add remote/already added repo from heroku](# Add remote/already added repo from heroku)
+12. [Option to wsgi for Django deployment to Heroku](#Option to wsgi for Django deployment to Heroku)
+13. [This is how should be on the bottom of settings.py](#This is how should be on the bottom of settings.py)
+14. [Install DB Browser for Sqlite](#Install DB Browser for Sqlite)
+15. [Display sqlite3 db on bash cmd](#Display sqlite3 db on bash cmd)
+16. [List of Sqlite3 commands](#List of Sqlite3 commands)
+17. [Features](#Features)
+
 ### Command to kill port that is already in use by another application
 - ```$ lsof -t -i tcp:8000 | xargs kill -9```
 
 ### Command to change the Github user on VS code or even other IDE:
 - ```git config --global user.email "email@example.com" ```
+- ```git config --global user.name "yourgithubusername" ```
 
 ### To remove a submodule from git you need to:
 
@@ -16,6 +37,23 @@ This is a list of important commands for deployment or installation if different
 - Run rm -rf .git/modules/path_to_submodule (no trailing slash).
 - Commit git commit -m "Removed submodule "
 - Delete the now untracked submodule files rm -rf path_to_submodule
+
+### Check which repo and branch is in my git
+- ```git remote -v```
+- ```git branch -v```
+
+### Remove commits 
+
+To force to remove the last commit from git,
+use these 2 following commands:
+
+git reset --hard HEAD^
+git push origin -f
+
+If you want to remove the last 2 commits:
+git reset --hard HEAD~2
+git push origin -f
+
 
 ### Install Django virtual environmnet in directory
 
@@ -111,9 +149,7 @@ Ps: based on the step-by-step above, depending the version of django `whitenoise
 
 ```web: python manage.py runserver 0.0.0.0:$PORT --noreload```
 
-### Check which repo is in my git
-- ```git remote -v```
-- This is how should be on the bottom of settings.py
+### This is how should be on the bottom of settings.py
 
 ```
 # Static files (CSS, JavaScript, Images)
@@ -144,18 +180,6 @@ After deploying to heroku add this command:
 run static files while `Debug=False`. 
 
 Remember, to have access to `static` files while developing in `localhost` live `Debug.True`. 
-
-### Remove commits 
-
-To force to remove the last commit from git,
-use these 2 following commands:
-
-git reset --hard HEAD^
-git push origin -f
-
-If you want to remove the last 2 commits:
-git reset --hard HEAD~2
-git push origin -f
 
 
 ### Install DB Browser for Sqlite
