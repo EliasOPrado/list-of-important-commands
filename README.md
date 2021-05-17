@@ -4,8 +4,8 @@ This is a list of important commands for deployment or installation if different
 ## Table of content
 
 1. [Command to kill port that is already in use by another application](#Command-to-kill-port-that-is-already-in-use-by-another-application)
-2. [Command to change the Github user on VS code or even other IDE](#Command-to-change-the-Github-user-on-VS-code-or-even-other-IDE:)
-3. [remove a submodule from git](#To-remove-a-submodule-from-git-you-need-to:)
+2. [Command to change the Github user on VS code or even other IDE](#Command-to-change-the-Github-user-on-VS-code-or-even-other-IDE)
+3. [remove a submodule from git](#To-remove-a-submodule-from-git-you-need-to)
 4. [Check which repo and branch is in my git](#Check-which-repo-and-branch-is-in-my-git)
 5. [Remove commits ](#Remove-commits )
 6. [Install Django virtual environmnet in directory](#Install-Django-virtual-environmnet-in-directory)
@@ -13,7 +13,7 @@ This is a list of important commands for deployment or installation if different
 8. [Initiate a new Django project ](#Initiate-a-new-Django-project )
 9. [Creating a new app](#Creating-a-new-app)
 10. [Install django-heroku without psycopg2 for mac os](#Install-django-heroku-without-psycopg2-for-mac-os)
-11. [Add remote/already added repo from heroku](# Add-remote/already-added-repo-from-heroku)
+11. [Add remote/already added repo from heroku](#Add-remote/already-added-repo-from-heroku)
 12. [Option to wsgi for Django deployment to Heroku](#Option-to-wsgi-for-Django-deployment-to-Heroku)
 13. [This is how should be on the bottom of settings.py](#This-is-how-should-be-on-the-bottom-of-settings.py)
 14. [Install DB Browser for Sqlite](#Install-DB-Browser-for-Sqlite)
