@@ -4,24 +4,28 @@ This is a list of important commands for deployment or installation if different
 ## Table of content
 
 1. [Command to kill port that is already in use by another application](#Command-to-kill-port-that-is-already-in-use-by-another-application)
-2. [Command to change the Github user on VS code or even other IDE](#Command-to-change-the-Github-user-on-VS-code-or-even-other-IDE)
-3. [remove a submodule from git](#To-remove-a-submodule-from-git-you-need-to)
-4. [Check which repo and branch is in my git](#Check-which-repo-and-branch-is-in-my-git)
-5. [Remove commits ](#Remove-commits )
-6. [Install Django virtual environmnet in directory](#Install-Django-virtual-environmnet-in-directory)
-7. [Deactivate Django virtual environment in directory](#Deactivate-Django-virtual-environment-in-directory)
-8. [Initiate a new Django project ](#Initiate-a-new-Django-project )
-9. [Creating a new app](#Creating-a-new-app)
-10. [Install django-heroku without psycopg2 for mac os](#Install-django-heroku-without-psycopg2-for-mac-os)
-11. [Add remote or already added repo from heroku](#Add-remote-or-already-added-repo-from-heroku)
-12. [Option to wsgi for Django deployment to Heroku](#Option-to-wsgi-for-Django-deployment-to-Heroku)
-13. [This is how should be on the bottom of settings.py](#This-is-how-should-be-on-the-bottom-of-settings.py)
-14. [Install DB Browser for Sqlite](#Install-DB-Browser-for-Sqlite)
-15. [Display sqlite3 db on bash cmd](#Display-sqlite3-db-on-bash-cmd)
-16. [List of Sqlite3 commands](#List-of-Sqlite3-commands)
+2. [Uninstall all installed package at once](#Uninstall-all-python-installed-package-at-once)
+3. [Command to change the Github user on VS code or even other IDE](#Command-to-change-the-Github-user-on-VS-code-or-even-other-IDE)
+4. [remove a submodule from git](#To-remove-a-submodule-from-git-you-need-to)
+5. [Check which repo and branch is in my git](#Check-which-repo-and-branch-is-in-my-git)
+6. [Remove commits ](#Remove-commits )
+7. [Install Django virtual environmnet in directory](#Install-Django-virtual-environmnet-in-directory)
+8. [Deactivate Django virtual environment in directory](#Deactivate-Django-virtual-environment-in-directory)
+9. [Initiate a new Django project ](#Initiate-a-new-Django-project )
+10. [Creating a new app](#Creating-a-new-app)
+11. [Install django-heroku without psycopg2 for mac os](#Install-django-heroku-without-psycopg2-for-mac-os)
+12. [Add remote or already added repo from heroku](#Add-remote-or-already-added-repo-from-heroku)
+13. [Option to wsgi for Django deployment to Heroku](#Option-to-wsgi-for-Django-deployment-to-Heroku)
+14. [This is how should be on the bottom of settings.py](#This-is-how-should-be-on-the-bottom-of-settings.py)
+15. [Install DB Browser for Sqlite](#Install-DB-Browser-for-Sqlite)
+16. [Display sqlite3 db on bash cmd](#Display-sqlite3-db-on-bash-cmd)
+17. [List of Sqlite3 commands](#List-of-Sqlite3-commands)
 
 ### Command to kill port that is already in use by another application
 - ```$ lsof -t -i tcp:8000 | xargs kill -9```
+
+### Uninstall all python installed package at once
+- ```pip freeze | xargs pip uninstall -y```
 
 ### Command to change the Github user on VS code or even other IDE:
 - ```git config --global user.email "email@example.com" ```
